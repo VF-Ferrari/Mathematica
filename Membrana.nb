@@ -1,0 +1,185 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6515,        177]
+NotebookOptionsPosition[      5657,        158]
+NotebookOutlinePosition[      6001,        173]
+CellTagsIndexPosition[      5958,        170]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"umembrana", "[", 
+   RowBox[{"m_", ",", "n_", ",", "L_", ",", "H_", ",", "x_", ",", "y_"}], 
+   "]"}], ":", " ", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{
+     FractionBox["1", "L"], 
+     RowBox[{"n", " ", "\[Pi]", " ", "x"}]}], "]"}], 
+   RowBox[{"Sin", "[", 
+    RowBox[{
+     FractionBox["1", "H"], 
+     RowBox[{"m", " ", "\[Pi]", " ", "y"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.855989394079008*^9, 3.855989443695846*^9}, 
+   3.8559911172985706`*^9},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"79da5042-c02e-4542-bd6b-0b6ee9e21ac3"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"DensityPlot", "[", 
+    RowBox[{
+     RowBox[{"umembrana", "[", 
+      RowBox[{"10", ",", "10", ",", "1", ",", "1", ",", "x", ",", "y"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "50"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"umembrana", "[", 
+      RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "x", ",", "y"}], "]"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.855989469096299*^9, 3.8559896264312983`*^9}, {
+  3.855990584409091*^9, 3.85599059172851*^9}, {3.855991110889204*^9, 
+  3.8559911111052165`*^9}, {3.855991834561596*^9, 
+  3.855991893065942*^9}},ExpressionUUID->"4b247598-267f-46ad-aa98-\
+9837a6d149d8"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8559918752749243`*^9, 
+  3.85599189600811*^9}},ExpressionUUID->"e72b74ec-4f20-4884-abbc-\
+b84f76d08805"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"umembrana", "[", 
+      RowBox[{"m", ",", "n", ",", "1", ",", "1", ",", "x", ",", "y"}], "]"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"m", ",", "1", ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8559896782562623`*^9, 3.8559897592078924`*^9}, {
+  3.8559897988081574`*^9, 3.855989828967882*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"20562f9a-21bd-4505-ab65-8e066f01ef9a"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"umembrana", "[", 
+      RowBox[{"10", ",", "10", ",", "1", ",", "1", ",", "x", ",", "y"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "100"}], ",", " ", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"EmitSound", "[", 
+      RowBox[{"Play", "[", 
+       RowBox[{
+        RowBox[{"umembrana", "[", 
+         RowBox[{"m", ",", "n", ",", 
+          FractionBox["\[Pi]", "1"], ",", "\[Pi]", ",", "x", ",", "y"}], 
+         "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"m", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "100", ",", "2000"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "100", ",", "3000"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8559898838650227`*^9, 3.8559899482317038`*^9}, {
+   3.8559905618408003`*^9, 3.855990562287826*^9}, {3.855990912080833*^9, 
+   3.8559910867538233`*^9}, {3.8559912099558706`*^9, 3.855991240825636*^9}, {
+   3.85599145314678*^9, 3.8559914541538377`*^9}, {3.8559914961462393`*^9, 
+   3.8559915018115635`*^9}, 
+   3.855991827978219*^9},ExpressionUUID->"549ae64d-41e7-4998-8bc6-\
+745753bf077f"],
+
+Cell[BoxData[
+ RowBox[{"Play", "[", 
+  RowBox[{
+   RowBox[{"umembrana", "[", 
+    RowBox[{"1", ",", "n", ",", 
+     FractionBox["\[Pi]", "1"], ",", "\[Pi]", ",", "2000", ",", "2000"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.855991248257061*^9, 3.855991307665459*^9}},
+ CellLabel->
+  "In[123]:=",ExpressionUUID->"b3b6f25c-07d6-4e10-b0ec-52985b110c51"],
+
+Cell[BoxData["  "], "Input",
+ CellChangeTimes->{{3.8559914302104683`*^9, 
+  3.8559914324325953`*^9}},ExpressionUUID->"803a87b6-5705-4299-8aa2-\
+a1f155e1e819"]
+},
+WindowSize->{1015, 829},
+WindowMargins->{{Automatic, -14}, {67, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 619, 18, 60, "Input",ExpressionUUID->"79da5042-c02e-4542-bd6b-0b6ee9e21ac3"],
+Cell[1180, 40, 1300, 31, 139, "Input",ExpressionUUID->"4b247598-267f-46ad-aa98-9837a6d149d8"],
+Cell[2483, 73, 153, 3, 28, "Input",ExpressionUUID->"e72b74ec-4f20-4884-abbc-b84f76d08805"],
+Cell[2639, 78, 821, 20, 45, "Input",ExpressionUUID->"20562f9a-21bd-4505-ab65-8e066f01ef9a"],
+Cell[3463, 100, 1593, 38, 115, "Input",ExpressionUUID->"549ae64d-41e7-4998-8bc6-745753bf077f"],
+Cell[5059, 140, 433, 11, 58, "Input",ExpressionUUID->"b3b6f25c-07d6-4e10-b0ec-52985b110c51"],
+Cell[5495, 153, 158, 3, 28, "Input",ExpressionUUID->"803a87b6-5705-4299-8aa2-a1f155e1e819"]
+}
+]
+*)
+
